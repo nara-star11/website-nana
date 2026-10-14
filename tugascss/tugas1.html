@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html> <head> 
+    <style> 
+    * { 
+        box-sizing: border-box;
+        margin: 0px;    
+        padding: 0px;
+        }
+
+        .header { 
+            background-image: url("bg3.jpg.jpeg");  
+            height: 500px; 
+            background-size: cover;
+            padding : 30px 30 px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0px 0px;
+            border-radius: 15px;
+            }
+                
+        .logo { 
+            background-position: center top;
+            width : 200px; height : 75px;
+            background-image: url("logo1.png.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 36px;
+             }
+
+        .menuatas{ 
+            background-color: #e6eff1; 
+            width:250px; height: auto;
+            margin-left: 20px;
+            margin-right: 60px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+             .main { 
+                background-image: url("bg5.jpg");
+                width: auto; 
+                height: auto;
+                background-size:cover;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0px 0px;
+                margin-top: 30px;
+                border-radius: 15px;
+            }
+
+            .clearfix::after { 
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .menu{ 
+                width: 25%;
+            }
+
+            /* kolam tengah:deskripsi */
+            .content { 
+                width: 75%;
+                flex: 5; /* mengatur proporsi lebar */ 
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: 100px;
+                box-sizing: border-box; /* memastikan padding tidak merusak total lebar 75% */
+            }
+
+             .column { 
+                float: left;
+                list-style-type: none;
+                background-color: #fefefe26;
+                padding: 15px;
+                border-radius: 10px;
+                border: 2px solid #ba2976;
+                box-shadow: 0px 5px 20px #f758ad;
+            }
+
+            .content h1 { 
+                margin-bottom:5px;
+                padding-bottom: 2px solid;
+                color: #ff39d1;
+                margin-left: 50px;
+                display: inline-block;
+                text-decoration: underline dashed;
+                text-underline-offset: 8px;
+                text-decoration-color: black;
+                text-decoration-thickness: 2px ;
+            }
+
+            .content p { 
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                color: rgb(0, 0, 0);
+                text-align: justify;
+            }
+
+            .logo-body{ 
+                width: 300px; height: 300px; 
+                object-fit: cover;
+                margin-left: auto;
+                float: right;
+                margin-bottom: 40px;
+                margin-left: 10px;
+            }
+
+            .menu ul { 
+                list-style-type: none;
+                padding: 0;
+                margin: 0px;
+
+            }
+            .menu li { 
+                padding: 8px;
+                background-color: #f1f1f1;
+                box-shadow: 0 5px 15px #555;
+                margin-bottom: 5px;
+                color: #f758ad;
+                border-radius: 12px;
+            }
+
+            .menu li:hover { 
+                background-color: #555;
+            }
+
+        .site-footer {
+            width: auto;                  
+            height: 200px;
+            margin: 0px 0px; 
+            margin-top: 30px;           
+            background-image: url(bg4.jpg); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            border-radius: 15px;
+            }
+
+            .footer-container {
+                max-width: 1200px;            /* Sesuaikan dengan lebar maksimal web Anda */
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                    }
+
+        /* Kotak Logo 200px x 75px */
+            .footer-logo img {
+                width: 200px;
+                height: 75px;      
+                object-fit: cover;
+                display: block;
+                    }
+
+        /* Pengaturan Kolom Teks */
+            .footer-column {
+                flex: 1;
+                margin-left: 150px;  
+                float: left;
+                list-style-type: none;
+                background-color: #fefefe3b;
+                padding: 15px;
+                border-radius: 10px;
+                border: 2px solid #ba2976;
+                box-shadow: 0px 5px 20px #f758ad;   
+                height: 150px;     /* Jarak antar kolom teks */
+                    }
+
+        /* Judul Kolom (Quic Linkk, Policy, Medsos) */
+            .footer-column h3 {
+                font-size: 16px;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+                    }
+
+        /* Daftar Tautan */
+            .footer-column ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                    }
+
+            .footer-column li {
+                margin-bottom: 5px;           /* Jarak baris teks */
+                    }
+
+            .footer-column a {
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                    }
+
+            .footer-column a:hover {
+            color: #0095ff;
+        }
+
+    </style>
+    </head>
+
+    <body> 
+    <div  class="header"> 
+        <div class="logo"> </div> 
+        <div class="menuatas">|  Home |  Service  |  Content |  About  </div>
+    </div>
+    <div class="main">
+        <div class="column menu">
+            <ul>
+                <li> 
+                    <a href="https://booking.tngunungmerbabu.org/app/" target="_blank" style="text-decoration: none; color: #f758ad;">Registrasi</a>
+                </li>
+                <li>
+                    <a href="jalur.html" target="_self" style="text-decoration: none; color: #f758ad;">Jalur pendakian</a>
+                <li>
+                    <a href="https://haraduta.com/open-trip/gunung-merbabu/" target="_self" style="text-decoration: none; color: #f758ad;">Open trip</a>
+                </li>
+                <li>
+                    <a href="sejarah.html" target="_self" style="text-decoration: none; color: #f758ad;">Sejarah dan Mitos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>MERBABU MOUNTAIN</h1>
+            <img src="merbabu.jpg" class="logo-body">
+            <p> Gunung Merbabu merupakan gunung api aktif bertipe strato yang terletak di Provinsi Jawa Tengah terletak di antara Kabupaten Magelang, Boyolali, dan Semarang. Dengan ketinggian mencapai 3.142 MDPL.</p>
+            <p> Kawasan ini telah resmi ditetapkan sebagai Taman Nasional Gunung Merbabu guna melindungi kekayaan flora, fauna, serta ekosistem hutan tropis
+                pegunungan yang sangat vital bagi wilayah sekitarnya.</p>
+            <p> Gunung ini sangat terkenal dengan hamparan padang sabana luas yang tampak hijau subur saat musim hujan dan berubah eksotis keemasan saat musim kemarau. Jangan lupa bunga ikoniknya, yaitu bunga edelweis. </p>
+            <p> Selain itu, posisi Merbabu yang berhadapan langsung dengan kegagahan Gunung Merapi menyajikan pemandangan lanskap yang megah, terutama saat momen matahari terbit yang memikat dari balik samudra awan.</p>
+            
+        </div>
+        </div>
+
+        <footer class="site-footer">
+    <div class="footer-container"> 
+    </div>
+
+    <div class="footer-logo">
+      <img src="logo1.png.jpg" alt="Logo" width="200" height="75">
+    </div>
+
+    <!-- Tautan Cepat (Quick Links) -->
+    <div class="footer-column">
+      <h3><b> Quick Link </b></h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Kebijakan (Policy) -->
+    <div class="footer-column">
+      <h3><b> Policy</b></h3>
+      <ul>
+        <li><a href="https://maps.app.goo.gl/hbGsxhoDB3zPTbf26">Site map</a></li>
+      </ul>
+    </div>
+
+    <!-- Media Sosial (Medsos) -->
+    <div class="footer-column">
+      <h3><b> Medsos </b></h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="https://www.instagram.com/nchwe_?igsi=MTlmcDg2MDJ5M3lycw==" >Instagram </a></li>
+        <li> <a href="#">Tiktok</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>

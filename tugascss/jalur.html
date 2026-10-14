@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html> <head> 
+    <style> 
+    * { 
+        box-sizing: border-box;
+        margin: 0px;    
+        padding: 0px;
+        }
+
+        .header { 
+            background-image: url("bg3.jpg.jpeg");  
+            height: 500px; 
+            background-size: cover;
+            padding : 30px 30 px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0px 0px;
+            border-radius: 15px;
+                }
+                
+        .logo { 
+            background-position: center top;
+            width : 200px; height : 75px;
+            background-image: url("logo1.png.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 36px;
+             }
+
+        .menuatas{ 
+            background-color: #e6eff1; 
+            width:250px; height: auto;
+            margin-left: 20px;
+            margin-right: 60px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+             .main { 
+                background-image: url("bg5.jpg");
+                width: auto; 
+                height: auto;
+                background-size:cover;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0px 0px;
+                margin-top: 30px;
+                border-radius: 15px;
+            }
+
+            .clearfix::after { 
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .menu{ 
+                width: 25%;
+            }
+
+            /* kolam tengah:deskripsi */
+            .content { 
+                width: 75%;
+                flex: 5; /* mengatur proporsi lebar */ 
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: 100px;
+                box-sizing: border-box; /* memastikan padding tidak merusak total lebar 75% */
+            }
+
+             .column { 
+                float: left;
+                list-style-type: none;
+                background-color: #fefefe26;
+                padding: 15px;
+                border-radius: 10px;
+                border: 2px solid #ba2976;
+                box-shadow: 0px 5px 20px #f758ad;
+            }
+
+            .content h1 { 
+                margin-bottom:20px;
+                padding-bottom: 2px solid;
+                color: #ff39d1;
+                margin-left: 50px;
+                display: inline-block;
+                text-decoration: underline dashed;
+                text-underline-offset: 8px;
+                text-decoration-color: black;
+                text-decoration-thickness: 2px ;
+            }
+
+            .conten h3{ 
+                margin-left: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: rgb(0, 0, 0);
+                text-align: justify;
+            }
+
+            .conten h4{ 
+                margin-left: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: rgb(0, 0, 0);
+                text-align: justify;
+            }
+
+            .content p { 
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                color: rgb(0, 0, 0);
+                text-align: justify;
+            }
+
+            .jalur {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.jalur-text {
+    flex: 1;
+}
+
+.logo-body {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+            .menu ul { 
+                list-style-type: none;
+                padding: 0;
+                margin: 0px;
+
+            }
+            .menu li { 
+                padding: 8px;
+                background-color: #f1f1f1;
+                box-shadow: 0 5px 15px #555;
+                margin-bottom: 5px;
+                color: #f758ad;
+                border-radius: 12px;
+            }
+
+            .menu li:hover { 
+                background-color: #555;
+            }
+
+        .site-footer {
+            width: auto;                  
+            height: 200px;
+            margin: 0px 0px; 
+            margin-top: 30px;           
+            background-image: url(bg4.jpg); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            border-radius: 15px;
+            }
+
+            .footer-container {
+                max-width: 1200px;            /* Sesuaikan dengan lebar maksimal web Anda */
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                    }
+
+        /* Kotak Logo 200px x 75px */
+            .footer-logo img {
+                width: 200px;
+                height: 75px;      
+                object-fit: cover;
+                display: block;
+                    }
+
+        /* Pengaturan Kolom Teks */
+            .footer-column {
+                flex: 1;
+                margin-left: 150px;  
+                float: left;
+                list-style-type: none;
+                background-color: #fefefe3b;
+                padding: 15px;
+                border-radius: 10px;
+                border: 2px solid #ba2976;
+                box-shadow: 0px 5px 20px #f758ad;   
+                height: 150px;     /* Jarak antar kolom teks */
+                    }
+
+        /* Judul Kolom (Quic Linkk, Policy, Medsos) */
+            .footer-column h3 {
+                font-size: 16px;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+                    }
+
+        /* Daftar Tautan */
+            .footer-column ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                    }
+
+            .footer-column li {
+                margin-bottom: 5px;           /* Jarak baris teks */
+                    }
+
+            .footer-column a {
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                    }
+
+            .footer-column a:hover {
+            color: #0095ff;
+        }
+
+    </style>
+    </head>
+
+    <body> 
+    <div  class="header"> 
+        <div class="logo"> </div> 
+        <div class="menuatas">|  Home |  Service  |  Content |  About  </div>
+    </div>
+    <div class="main">
+        <div class="column menu">
+            <ul>
+                <li> 
+                    <a href="https://booking.tngunungmerbabu.org/app/" target="blank" style="text-decoration: none; color: #f758ad;">Registrasi
+                    </a>
+                </li>
+                <li>Jalur pendakian</li>
+                <li>Jasa open trip dan porter</li>
+                <li>Rental alat hiking</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>JALUR PENDAKIAN </h1>
+        <h4> Berikut adalah jalur resmi menuju puncak Gunung Merbabu: </h4>
+
+        <div class="jalur">
+            <div class="jalur-text">
+                <h3> 1. Jalur Selo </h3>
+                <p> Jalur ini merupakan yang paling populer dan banyak digunakan pendaki karna sudah ada sejak lama.
+                Basecamp Selo terletak di Desa Selo, Boyolali. Jalur ini relatif lebih mudah dan cepat mencapai puncak, dengan pemandangan sabana yang luas.  
+                Meskipun demikian, para pendaki juga tetap perlu berhati-hati saat melalui jalur ini, karena perjalanannya cukup curam dan mempunyai banyak tantangan.
+                </p>
+            </div>
+            <img src="selo.jpg" class="logo-body">
+        </div>
+
+        <div class="jalur">
+            <div class="jalur-teks">
+                <h3> 2. Jalur Suwanting </h3>
+                <p> Salah satu jalur pendakian Gunung Merbabu yang cukup ekstrem dan mempunyai pemandangan eksotis adalah jalur Suwanting. Jalur yang berada di Magelang ini bisa menjadi salah satu pertimbangan para pemula, karena rutenya cenderung landai meskipun jarak tempuhnya panjang. Di samping itu, jalur ini mempunyai pemandangan indah, mulai dari hutan tropis, hingga aliran air sungai yang menyegarkan. Cocok untuk pendaki yang ingin menguji stamina dan menikmati pemandangan yang berbeda.               
+                </p>
+            </div>
+            <img src="suwanting.jpg" class="logo-body">
+        </div>
+        
+        <div class="jalur">
+            <div class="jalur-teks">
+                <h3> 3. Jalur Thekelan </h3>
+                <p> Jalur Thekelan juga termasuk sebagai jalur pendakian Gunung Merbabu tertua yang ada di Semarang. Rute ini akan menawarkan suasana yang lebih sepi dan asri. Cocok untuk pendaki yang mencari ketenangan dan ingin menikmati keindahan alam yang tenang. Rute jalur ini akan bersatu dengan jalur Wekas serta Cunthel. Ada spot Watu Gubug yang populer di kalangan para pendaki. Kamu juga perlu berhati-hati saat melewati jalur ini, karena tanjakannya terbilang terjal.
+                </p>
+            </div>
+            <img src="thekelan.jpg" class="logo-body">
+        </div>
+
+        <div class="jalur">
+            <div class="jalur-teks">
+                <h3> 4. Jalur Wekas </h3>
+                <p> Jalur Wekas juga termasuk rute pendakian Gunung Merbabu yang berada di Magelang. Jalur ini relatif lebih pendek dan cocok bagi pendaki yang ingin mencapai puncak dengan waktu lebih singkat. Namun, treknya cenderung lebih terjal. Walau begitu ada pula pendaki yang ingin berkemah, bisa melalui jalur ini. Pasalnya, di Pos II Jalur Wekas terdapat banyak sumber air dan memiliki pemandangan ini, sehingga banyak pendaki memutuskan untuk berkemah di kawasan ini.                
+                </p>
+            </div>
+            <img src="wekas.jpg" class="logo-body">
+        </div>
+            
+         <div class="jalur">
+            <div class="jalur-teks">
+                <h3> 5. Jalur Cuntel </h3>
+                <p> Rute pendakian Gunung Merbabu yang terakhir adalah jalur Cunthel yang berada di Getasan, Semarang. Pada jalur ini, terdapat menara pemancar yang akan dijumpai para pendaki. Selain itu, rute pendakian ini juga tergolong tenang dan tidak sepopuler lainnya, sehingga jalurnya terkesan alami.                
+                </p>
+            </div>
+            <img src="cuntel.jpg" class="logo-body">
+        </div>
+            
+        </div>
+    </div>
+
+        <footer class="site-footer">
+    <div class="footer-container"> 
+    </div>
+
+    <div class="footer-logo">
+      <img src="logo1.png.jpg" alt="Logo" width="200" height="75">
+    </div>
+
+    <!-- Tautan Cepat (Quick Links) -->
+    <div class="footer-column">
+      <h3><b> Quick Link </b></h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Kebijakan (Policy) -->
+    <div class="footer-column">
+      <h3><b> Policy</b></h3>
+      <ul>
+        <li><a href="#">Site map</a></li>
+      </ul>
+    </div>
+
+    <!-- Media Sosial (Medsos) -->
+    <div class="footer-column">
+      <h3><b> Medsos </b></h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="https://www.instagram.com/btn_gn_merbabu?igsi=MWdhOTBwaWE5dHNtZQ==" >Instagram </a></li>
+        <li> <a href="#">Tiktok</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>
